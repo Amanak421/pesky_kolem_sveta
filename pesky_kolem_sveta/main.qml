@@ -4,24 +4,32 @@ import QtQuick.Controls 2.12
 import QtQml 2.12
 
 Window {
-    width: 640
-    height: 480
+    width: 480
+    height: 640
     visible: true
     title: qsTr("Pěšky kolem světa")
 
-    StackView{
+    StackView{      // vytvoří stackview pro celou aplikaci
         id: mainStackView
 
         anchors.fill: parent
-        initialItem: Qt.resolvedUrl("qrc:/LoadPage.qml") // uvodní stránka
+        initialItem: Qt.resolvedUrl("qrc:/LoadPage.qml") // nastaví uvodní stránku než se načte aplikace
 
     }
 
-    Component.onCompleted: {
-        mainStackView.push("qrc:/MainMenuPage.qml");
+    Component.onCompleted: {    // po načtení všech component zobrazí úvodní menu
+        mainStackView.push(mainMenuPage);
     }
 
     Component{
+        id: loadPage
+
+        LoadPage{
+            anchors.fill: parent
+        }
+    }
+
+    Component{      // vytváří jednotlivé stránky
         id: mainMenuPage
 
         MainMenuPage{
