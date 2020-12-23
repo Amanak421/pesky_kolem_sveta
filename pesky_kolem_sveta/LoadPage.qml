@@ -5,4 +5,12 @@ Page {
 
     anchors.fill: parent // vyplní celou obrazovku
 
+    Image{
+
+        source: "qrc:/img/icon.png" // zdroj ikony -> img.qrc
+
+        anchors.centerIn: parent
+
+    }
+
 }
