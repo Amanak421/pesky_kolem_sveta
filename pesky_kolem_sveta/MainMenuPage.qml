@@ -54,7 +54,7 @@ Page {
             width: parent.width / 2     // Nastaví výšku a šířku - výška musí být o 10 menší kvůli kompenzaci mezer mezi objekty
             height: parent.height / 2 - 10
 
-            MouseArea{
+            MouseArea{      // Vytvoří plochu pro kliknutí přes obrázek
                 anchors.fill:parent
 
                 onClicked: {
@@ -74,12 +74,17 @@ Page {
             width: parent.width / 2     // Nastaví výšku a šířku - výška musí být o 10 menší kvůli kompenzaci mezer mezi objekty
             height: parent.height / 2 - 10
 
+            MouseArea{      // Vytvoří plochu pro kliknutí přes obrázek
+                anchors.fill:parent
+
+                onClicked: {
+                    mainStackView.push(loadPage);
+                }
+
+            }
+
         }
 
-
     }
-
-
-
 
 }
