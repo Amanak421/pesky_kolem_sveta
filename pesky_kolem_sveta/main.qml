@@ -4,8 +4,9 @@ import QtQuick.Controls 2.12
 import QtQml 2.12
 
 Window {
-    width: 480
-    height: 640
+    id:mainWindow
+    width: 440
+    height: 700
     visible: true
     title: qsTr("Pěšky kolem světa")
 
