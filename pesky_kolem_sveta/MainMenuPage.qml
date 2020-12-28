@@ -6,7 +6,10 @@ Page {
 
     anchors.fill: parent // vyplní celou obrazovku
 
-    Row{
+
+
+    Column{
+        id: logo_row
 
         anchors.fill: parent
 
@@ -15,7 +18,7 @@ Page {
 
             source: "qrc:/img/logo.png"
 
-            anchors.top: parent.top
+            //anchors.top: parent.top
             anchors.left: parent.left
             anchors.right: parent.right
 
@@ -25,15 +28,13 @@ Page {
 
         }
 
-
         Image {
             id: create_team_button
 
             source: "qrc:/img/create_team.png"
 
-            anchors.top: logo.bottom
-
-            anchors.topMargin: 15
+            //anchors.top: logo.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
 
             width: parent.width / 2
             height: parent.height / 3
@@ -44,9 +45,8 @@ Page {
             id: settings_button
 
             source: "qrc:/img/settings.png"
-            anchors.bottom: parent.bottom
 
-            anchors.topMargin: 15
+            anchors.horizontalCenter: parent.horizontalCenter
 
             width: parent.width / 2
             height: parent.height / 3
@@ -54,12 +54,6 @@ Page {
         }
 
 
-
     }
-
-
-
-
-
 
 }

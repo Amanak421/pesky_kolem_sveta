@@ -25,7 +25,7 @@ Window {
         id: loadPage
 
         LoadPage{
-            anchors.fill: parent
+
         }
     }
 
@@ -33,7 +33,7 @@ Window {
         id: mainMenuPage
 
         MainMenuPage{
-            anchors.fill: parent
+
         }
     }
 
