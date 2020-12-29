@@ -47,7 +47,7 @@ Window {
     }
 
     Component{
-        id: stnamePage
+        id: ctnamePage
 
         CTNamePage{
             anchors.fill: parent

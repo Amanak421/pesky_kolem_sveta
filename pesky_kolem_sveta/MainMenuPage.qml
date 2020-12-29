@@ -58,7 +58,7 @@ Page {
                 anchors.fill:parent
 
                 onClicked: {
-                    mainStackView.push(loadPage);
+                    mainStackView.push(ctnamePage);
                 }
             }
 

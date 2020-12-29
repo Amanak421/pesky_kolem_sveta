@@ -4,5 +4,7 @@
         <file alias="create_team.png">img/create_team_1.png</file>
         <file alias="settings.png">img/setting_white.png</file>
         <file alias="logo.png">img/logo_1_1.png</file>
+        <file alias="back.png">img/back.png</file>
+        <file alias="podklad.png">img/podlad.png</file>
     </qresource>
 </RCC>
