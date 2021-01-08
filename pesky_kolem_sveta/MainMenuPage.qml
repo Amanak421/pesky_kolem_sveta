@@ -58,7 +58,7 @@ Page {
                 anchors.fill:parent
 
                 onClicked: {
-                    mainStackView.push(ctnamePage);
+                    setupStackView.push(createTeamSw);
                 }
             }
 
@@ -78,7 +78,7 @@ Page {
                 anchors.fill:parent
 
                 onClicked: {
-                    mainStackView.push(loadPage);
+                    setupStackView.push(settingsPage);
                 }
 
             }

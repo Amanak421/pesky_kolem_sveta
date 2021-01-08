@@ -19,7 +19,7 @@ Window {
     }
 
     Component.onCompleted: {    // po načtení všech component zobrazí úvodní menu
-        mainStackView.push(mainMenuPage);
+        mainStackView.push(setupSW);
     }
 
     Component{
@@ -31,25 +31,17 @@ Window {
     }
 
     Component{      // vytváří jednotlivé stránky
-        id: mainMenuPage
+        id: setupSW
 
-        MainMenuPage{
+        MainMenuSW{
 
         }
     }
 
     Component{
-        id: settingsPage
+        id: gameSW
 
-        SettingsPage{
-            anchors.fill: parent
-        }
-    }
-
-    Component{
-        id: ctnamePage
-
-        CTNamePage{
+        GameSW{
             anchors.fill: parent
         }
     }

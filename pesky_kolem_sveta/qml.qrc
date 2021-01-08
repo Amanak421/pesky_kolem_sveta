@@ -5,6 +5,11 @@
         <file>MainMenuPage.qml</file>
         <file>SettingsPage.qml</file>
         <file>CTNamePage.qml</file>
-        <file>ImageButton.qml</file>
+        <file>MainMenuSW.qml</file>
+        <file>CreateTeamSW.qml</file>
+        <file>CTMNamePage.qml</file>
+        <file>CTColorPage.qml</file>
+        <file>CTRecapPage.qml</file>
+        <file>GameSW.qml</file>
     </qresource>
 </RCC>

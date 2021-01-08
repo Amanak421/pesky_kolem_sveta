@@ -2,7 +2,6 @@ import QtQuick 2.12
 import QtQuick.Controls 2.12
 
 Page {
-    id: ctnamePage
 
     anchors.fill: parent // vyplní celou obrazovku
 
@@ -12,7 +11,7 @@ Page {
         text: "Zpět"
 
         onClicked: {
-            setupStackView.push(mainMenuPage);
+            ctStackView.push(namePage);
         }
 
     }
@@ -22,10 +21,10 @@ Page {
 
         text: "Dál"
 
-        anchors.centerIn: parent
+        anchors.left: back.right
 
         onClicked: {
-            ctStackView.push(memNamePage);
+            ctStackView.push(colorPage);
         }
 
     }

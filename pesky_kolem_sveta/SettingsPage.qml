@@ -5,4 +5,14 @@ Page {
 
     anchors.fill: parent // vyplní celou obrazovku
 
+    Button{
+        id: back
+
+        text: "Zpět"
+
+        onClicked: {
+            setupStackView.push(mainMenuPage);
+        }
+    }
+
 }
